@@ -2,6 +2,7 @@ FROM dsbaars/docker_gosu_php:5.5
 
 # Install node.js, bower, grunt-cli
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get update
 RUN apt-get install -y nodejs
 RUN npm install -g bower grunt-cli
 
